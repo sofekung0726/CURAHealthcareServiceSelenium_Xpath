@@ -33,10 +33,11 @@ class MakeAppointment {
                 driver.findElement(By.xpath("//*[@id=\"btn-book-appointment\"]")).click();
                 
                 String result = driver.findElement(By.xpath("//*[@id=\"comment\"]")).getText();
-                if(result.equalsIgnoreCase("Warframe 75%"))
-                	System.out.println("Pass");
-                else
-                	System.out.println("Fail");
+                //if(result.equalsIgnoreCase("Warframe 75%"))
+                //	System.out.println("Pass");
+                //else
+                //	System.out.println("Fail");
+	    	assertEquals("Hello World", result);
                 Thread.sleep(500);
                 driver.quit();
                 //driver = null;
